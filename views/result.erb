@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Define Me</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <style>
+  .container-fluid {margin-top: 30px}
+  h1 {text-align: center}
+  h3 {text-align: center}
+  p {text-align: justify}
+  img {
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+  #centered {
+    text-align: center;
+    margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <h1><%= @name.capitalize %></h1>
+    <div class="row">
+      <div class="col-xs-2 col-md-3"></div>
+      <div class="col-xs-8 col-md-6">
+        <p><%= @meaning %></p>
+        <br />
+        <p>Wow, what a <%= @sentiment %> definition!</p>
+      </div>
+      <div class="col-xs-2 col-md-3"></div>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-xs-2 col-md-3"></div>
+      <div class="col-xs-8 col-md-6">
+        <h3>I think you may need some:</h3>
+        <img src="<%= @image %>" />
+        <p id="centered"><%= @product %></p>
+        <hr />
+      </div>
+      <div class="col-xs-2 col-md-3"></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-2 col-md-3"></div>
+      <div class="col-xs-8 col-md-6">
+        <p><a class="btn btn-default btn-block" href="/">new entry</a></p>
+      </div>
+      <div class="col-xs-2 col-md-3"></div>
+    </div>
+    <br />
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
